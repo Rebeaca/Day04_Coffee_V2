@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.wangmm.day04_coffee_v2.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="请输入您的姓名"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="甜品"
+                android:textSize="20sp"/>
+
+            <CheckBox
+                android:id="@+id/ck_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="冰激凌"/>
+
+            <CheckBox
+                android:id="@+id/ck_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="巧克力"/>
+
+            <CheckBox
+                android:id="@+id/ck_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="曲奇饼干"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="订购数量"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="+"/>
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_less"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="-"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="咖啡订单"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="订单详情"
+        android:textSize="20sp"/>
+</LinearLayout>
